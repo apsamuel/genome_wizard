@@ -1,0 +1,12 @@
+service: gnome-test
+frameworkVersion: ">=1.2.0 <2.0.0"
+provider:
+  name: aws
+  runtime: python2.7
+  timeout: 180
+functions:
+  gnome:
+    name: gnome-test 
+    handler: gnome.handler
+plugins:
+  - serverless-python-requirements
